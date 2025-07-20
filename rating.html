@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/submit-review" method="post">
+      <h1>Write a Review</h1>
+      <div>
+        <h6>Product Information</h6>
+        <div>
+          <label for="productName"> Product Name </label>
+          <input readonly type="text" id="productName" />
+        </div>
+        <div>
+          <label for="productCategory"> Product Category </label>
+          <select name="productCategory" id="productCategory">
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="books">Books</option>
+            <option value="home">Home</option>
+            <option value="sport">Sports</option>
+          </select>
+        </div>
+        <div>
+          <label for="purchaseDate"> Purchase Date </label>
+          <input type="date" id="purchaseDate" />
+        </div>
+      </div>
+      <div>
+        <h6>Review Details</h6>
+        <div>
+          <label for="starting">Overall Rating</label>
+          <input id="starting" type="radio" value="1" name="rating" /> 1
+          <input type="radio" value="2" name="rating" /> 2
+          <input type="radio" value="3" name="rating" /> 3
+          <input type="radio" value="4" name="rating" /> 4
+          <input type="radio" value="5" name="rating" /> 5
+        </div>
+        <div>
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            required
+            minlength="5"
+            maxlength="100"
+          />
+        </div>
+        <div>
+          <label for="detailedReview">Detailed Review</label>
+          <textarea
+            name="detailedReview"
+            id="detailedReview"
+            rows="6"
+            cols="10"
+          >
+          </textarea>
+        </div>
+      </div>
+      <div>
+        <h6>Specific Ratings</h6>
+        <div>
+          <label for="quality">Quality</label>
+          <input id="quality" type="radio" value="1" name="quality" /> 1
+          <input type="radio" value="2" name="quality" /> 2
+          <input type="radio" value="3" name="quality" /> 3
+          <input type="radio" value="4" name="quality" /> 4
+          <input type="radio" value="5" name="quality" /> 5
+        </div>
+        <div>
+          <label for="valueForMoney">Value for Money</label>
+          <input
+            id="valueForMoney"
+            type="radio"
+            value="1"
+            name="valueForMoney"
+          />
+          1 <input type="radio" value="2" name="valueForMoney" /> 2
+          <input type="radio" value="3" name="valueForMoney" /> 3
+          <input type="radio" value="4" name="valueForMoney" /> 4
+          <input type="radio" value="5" name="valueForMoney" /> 5
+        </div>
+      </div>
+      <div>
+        <h6>Additional Information</h6>
+        <div>
+          <p>Would you like to recommend this product?</p>
+          <div>
+            <input
+              type="radio"
+              id="recommendYes"
+              name="recommend"
+              value="yes"
+            />
+            <label for="recommendYes">Yes</label>
+            <input type="radio" id="recommendNo" name="recommend" value="no" />
+            <label for="recommendNo">No</label>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

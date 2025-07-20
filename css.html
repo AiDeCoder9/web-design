@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Class</title>
+    <style>
+      h1 {
+        color: red;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+      }
+      /* p {
+        color: yellow;
+        font-size: 24px;
+        font-weight: 700;
+      } */
+
+      .paragraph1 {
+        color: green;
+        font-size: 20px;
+        text-align: right;
+        text-transform: uppercase;
+        letter-spacing: 20px;
+        line-height: 1.5;
+        text-decoration: overline;
+        /* white-space: nowrap; */
+      }
+      .paragraph2 {
+        color: blue;
+        font-size: 18px;
+        text-align: center;
+        text-transform: capitalize;
+        text-decoration: line-through;
+        text-decoration-color: brown;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+      .bg-red {
+        background-color: red;
+      }
+      .bg-green {
+        background-color: green;
+      }
+      .bg-blue {
+        background-color: blue;
+      }
+      .bg-yellow {
+        background-color: yellow;
+      }
+      .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      .oval {
+        width: 200px;
+        height: 400px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="bg-green">Hello World</h1>
+    <p class="paragraph1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, natus.
+    </p>
+    <p class="paragraph2">Lorem ipsum dolor sit amet.</p>
+
+    <div class="bg-red box"></div>
+    <div class="bg-green box"></div>
+
+    <div class="bg-red circle"></div>
+    <div class="bg-green circle"></div>
+    <div class="bg-green oval"></div>
+
+    <div class="bg-blue box">
+      <div class="bg-yellow circle"></div>
+    </div>
+  </body>
+</html>
